@@ -35,7 +35,7 @@ export function LegalContent({
                 {sibling && (
                   <>
                     {" · "}
-                    <Link href={sibling.href} className="text-violet-600 hover:underline">
+                    <Link href={sibling.href} className="text-link-accent hover:underline">
                       {sibling.label}
                     </Link>
                   </>
@@ -50,7 +50,7 @@ export function LegalContent({
                 key={section.id}
                 id={section.id}
                 variants={fadeUp}
-                className="rounded-2xl border border-border/60 bg-white/80 p-6 shadow-sm backdrop-blur-sm"
+                className="rounded-2xl border border-border/60 bg-card-subtle p-6 shadow-sm backdrop-blur-sm"
               >
                 <h2 className="text-lg font-semibold">{section.title}</h2>
                 <div className="mt-3 space-y-3 text-sm leading-relaxed text-muted">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import  { ThemeToggle }  from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/features", label: "Features" },
@@ -10,7 +11,7 @@ const navLinks = [
 
 export function Header() {
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
+    <header className="fixed top-0 z-50 w-full border-b border-[var(--border)] bg-[color:var(--background)]/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <Link href="/" className="text-lg font-semibold tracking-tight">
           Neuraquadai
@@ -27,6 +28,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3 text-sm">
+        <ThemeToggle />
           <Link
             href="/login"
             className="hidden text-muted transition-colors hover:text-foreground sm:inline"

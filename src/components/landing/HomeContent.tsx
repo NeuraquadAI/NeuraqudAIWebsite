@@ -89,7 +89,7 @@ export function HomeContent() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-4 inline-block rounded-full border border-violet-200/60 bg-white/70 px-3 py-1 text-xs font-medium text-violet-700 shadow-sm backdrop-blur-sm"
+            className="mb-4 inline-block rounded-full border border-badge-border bg-badge px-3 py-1 text-xs font-medium text-badge-text shadow-sm backdrop-blur-sm"
           >
             AI company · Building in public
           </motion.p>
@@ -126,7 +126,7 @@ export function HomeContent() {
             </Link>
             <Link
               href="/features"
-              className="rounded-full border border-white/80 bg-white/60 px-6 py-3 text-sm font-medium shadow-sm backdrop-blur-sm transition-all hover:bg-white hover:shadow-md"
+              className="rounded-full border border-border/80 bg-card-soft px-6 py-3 text-sm font-medium shadow-sm backdrop-blur-sm transition-all hover:bg-card-solid hover:shadow-md"
             >
               Explore features
             </Link>
@@ -149,7 +149,7 @@ export function HomeContent() {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="rounded-full border border-border/80 bg-white/50 px-4 py-1.5 text-xs font-medium text-foreground/80 backdrop-blur-sm"
+                  className="rounded-full border border-border/80 bg-card-muted px-4 py-1.5 text-xs font-medium text-foreground/80 backdrop-blur-sm"
                 >
                   {pill}
                 </motion.span>
@@ -161,7 +161,7 @@ export function HomeContent() {
 
       {/* Quick links */}
       <section className="relative border-t border-border/50 py-16">
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--gradient-section-from)] to-transparent" />
         <div className="relative mx-auto max-w-5xl px-6">
           <StaggerContainer className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {highlights.map((item) => (
@@ -172,7 +172,7 @@ export function HomeContent() {
                     initial="rest"
                     whileHover="hover"
                     style={{ transformStyle: "preserve-3d" }}
-                    className={`rounded-2xl border border-border bg-white/90 p-5 shadow-sm backdrop-blur-sm transition-shadow ${item.color}`}
+                    className={`rounded-2xl border border-border bg-card p-5 shadow-sm backdrop-blur-sm transition-shadow ${item.color}`}
                   >
                     <h2 className="font-medium">{item.label}</h2>
                     <p className="mt-1 text-sm text-muted">{item.desc}</p>
@@ -187,7 +187,7 @@ export function HomeContent() {
       {/* Building */}
       <section id="building" className="relative py-24">
         <div
-          className="absolute inset-0 bg-gradient-to-br from-violet-50/80 via-transparent to-cyan-50/60"
+          className="absolute inset-0 bg-gradient-to-br from-[color:var(--tint-violet)] via-transparent to-[color:var(--tint-cyan)]"
           aria-hidden
         />
         <div className="relative mx-auto max-w-5xl px-6">
@@ -214,7 +214,7 @@ export function HomeContent() {
                 whileHover={{ y: -8, transition: { duration: 0.25 } }}
                 className={`group flex flex-col rounded-2xl border border-border/60 bg-gradient-to-br ${project.gradient} p-6 shadow-sm backdrop-blur-sm`}
               >
-                <span className="mb-4 w-fit rounded-full border border-white/60 bg-white/70 px-2.5 py-0.5 text-xs font-medium text-violet-700 backdrop-blur-sm">
+                <span className="mb-4 w-fit rounded-full border border-badge-border bg-badge px-2.5 py-0.5 text-xs font-medium text-badge-text backdrop-blur-sm">
                   {project.status}
                 </span>
                 <h3 className="text-lg font-medium">{project.title}</h3>
@@ -231,7 +231,7 @@ export function HomeContent() {
       {/* About */}
       <section
         id="about"
-        className="relative overflow-hidden border-t border-border/50 bg-white py-24"
+        className="relative overflow-hidden border-t border-border/50 bg-background py-24"
       >
         <motion.div
           className="absolute -right-32 top-1/2 h-64 w-64 rounded-full bg-fuchsia-300/30 blur-3xl"
@@ -278,7 +278,7 @@ export function HomeContent() {
               <motion.div
                 key={item.label}
                 variants={fadeUp}
-                className="rounded-2xl border border-border/60 bg-gradient-to-br from-white to-violet-50/50 p-6"
+                className="rounded-2xl border border-border/60 bg-gradient-to-br from-card-solid to-[color:var(--tint-violet)] p-6"
               >
                 <dt className="text-sm text-muted">{item.label}</dt>
                 <dd className="mt-1 text-lg font-medium">{item.value}</dd>
@@ -290,7 +290,7 @@ export function HomeContent() {
 
       {/* Contact */}
       <section id="contact" className="relative py-24">
-        <div className="absolute inset-0 bg-gradient-to-t from-violet-100/50 via-fuchsia-50/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--tint-violet)] via-[color:var(--tint-fuchsia)] to-transparent" />
         <AnimatedReveal className="relative mx-auto max-w-5xl px-6 text-center">
           <FadeUpItem>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -313,7 +313,7 @@ export function HomeContent() {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
                 <Link
                   href="/get-started"
-                  className="inline-block rounded-full border border-border bg-white px-8 py-3 text-sm font-medium shadow-sm transition-colors hover:shadow-md"
+                  className="inline-block rounded-full border border-border bg-card-solid px-8 py-3 text-sm font-medium shadow-sm transition-colors hover:shadow-md"
                 >
                   Get started
                 </Link>

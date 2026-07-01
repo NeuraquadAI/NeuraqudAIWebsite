@@ -21,7 +21,7 @@ export function AuthForm({
 }: AuthFormProps) {
   return (
     <div className="mx-auto w-full max-w-md px-6">
-      <div className="rounded-2xl border border-border bg-white p-8">
+      <div className="rounded-2xl border border-border bg-card-solid p-8">
         <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
         <p className="mt-2 text-sm text-muted">{subtitle}</p>
 
