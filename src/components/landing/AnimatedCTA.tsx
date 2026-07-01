@@ -21,7 +21,7 @@ export function AnimatedCTA({
 }: AnimatedCTAProps) {
   return (
     <section className="relative py-20">
-      <div className="absolute inset-0 bg-gradient-to-t from-violet-100/50 via-fuchsia-50/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--tint-violet)] via-[color:var(--tint-fuchsia)] to-transparent" />
       <AnimatedReveal className="relative mx-auto max-w-5xl px-6 text-center">
         <FadeUpItem>
           <h2 className="text-xl font-semibold sm:text-2xl">{title}</h2>
@@ -40,7 +40,7 @@ export function AnimatedCTA({
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
                 <Link
                   href={secondary.href}
-                  className="inline-block rounded-full border border-border bg-white px-8 py-3 text-sm font-medium shadow-sm hover:shadow-md"
+                  className="inline-block rounded-full border border-border bg-card-solid px-8 py-3 text-sm font-medium shadow-sm hover:shadow-md"
                 >
                   {secondary.text}
                 </Link>

@@ -24,11 +24,11 @@ export default function GetStartedPage() {
         />
         <p className="mx-auto mt-6 max-w-md px-6 text-center text-xs text-muted">
           By signing up, you agree to our{" "}
-          <Link href="/terms" className="text-violet-600 hover:underline">
+          <Link href="/terms" className="text-link-accent hover:underline">
             Terms of Service
           </Link>{" "}
           and{" "}
-          <Link href="/privacy" className="text-violet-600 hover:underline">
+          <Link href="/privacy" className="text-link-accent hover:underline">
             Privacy Policy
           </Link>
           . No credit card required during beta.

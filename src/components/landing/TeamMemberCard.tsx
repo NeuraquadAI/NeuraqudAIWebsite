@@ -31,7 +31,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="font-semibold">{member.name}</h3>
-        <p className="text-sm text-violet-700">{member.role}</p>
+        <p className="text-sm text-badge-text">{member.role}</p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
           {member.bio}
         </p>
@@ -39,7 +39,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
           href={member.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-violet-600 transition-colors hover:text-violet-800"
+          className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-link-accent transition-colors hover:text-accent"
           aria-label={`${member.name} on LinkedIn`}
         >
           <LinkedInIcon />

@@ -44,7 +44,7 @@ export function AboutContent() {
         </div>
       </section>
 
-      <section className="relative bg-white/50 py-16">
+      <section className="relative bg-section-alt py-16">
         <div className="mx-auto max-w-5xl px-6">
           <AnimatedReveal>
             <FadeUpItem>
@@ -82,7 +82,7 @@ export function AboutContent() {
               <motion.div
                 key={milestone.year}
                 variants={fadeUp}
-                className="flex gap-6 rounded-2xl border border-border/60 bg-white/80 p-5 shadow-sm backdrop-blur-sm"
+                className="flex gap-6 rounded-2xl border border-border/60 bg-card-subtle p-5 shadow-sm backdrop-blur-sm"
               >
                 <span className="shrink-0 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-500 px-3 py-1 text-sm font-medium text-white">
                   {milestone.year}
@@ -94,7 +94,7 @@ export function AboutContent() {
         </div>
       </section>
 
-      <section id="team" className="relative border-t border-border/50 bg-white/50 py-16">
+      <section id="team" className="relative border-t border-border/50 bg-section-alt py-16">
         <GlowOrbs variant="violet" />
         <div className="relative mx-auto max-w-5xl px-6">
           <AnimatedReveal>

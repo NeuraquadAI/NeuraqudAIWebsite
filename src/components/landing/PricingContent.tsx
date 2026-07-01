@@ -27,7 +27,7 @@ export function PricingContent() {
                 whileHover={{ y: -10, transition: { duration: 0.25 } }}
                 className={`flex flex-col rounded-2xl border p-6 shadow-sm backdrop-blur-sm ${
                   tier.highlighted
-                    ? "border-violet-300 bg-gradient-to-br from-violet-100/80 via-fuchsia-50/60 to-cyan-50/40 shadow-violet-200/40"
+                    ? "border-violet-300 bg-gradient-to-br from-violet-100/80 via-fuchsia-50/60 to-cyan-50/40 shadow-violet-200/40 dark:border-violet-500/40 dark:from-violet-950/50 dark:via-fuchsia-950/30 dark:to-cyan-950/20 dark:shadow-violet-900/20"
                     : `border-border/60 bg-gradient-to-br ${tier.gradient}`
                 }`}
               >
@@ -57,7 +57,7 @@ export function PricingContent() {
                 <ul className="mt-6 flex-1 space-y-3">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2 text-sm">
-                      <span className="text-violet-600" aria-hidden>
+                      <span className="text-link-accent" aria-hidden>
                         ✓
                       </span>
                       {feature}
@@ -94,7 +94,7 @@ export function PricingContent() {
                 All plans include a 14-day trial on paid tiers. Questions?{" "}
                 <a
                   href="mailto:hello@neuraquadai.com"
-                  className="font-medium text-violet-600 hover:underline"
+                  className="font-medium text-link-accent hover:underline"
                 >
                   Contact us
                 </a>

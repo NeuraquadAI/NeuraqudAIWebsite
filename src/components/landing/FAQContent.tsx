@@ -23,12 +23,12 @@ export function FAQContent() {
               <motion.details
                 key={item.question}
                 variants={fadeUp}
-                className="group rounded-2xl border border-border/60 bg-white/80 px-5 py-1 shadow-sm backdrop-blur-sm transition-colors open:border-violet-200 open:bg-gradient-to-br open:from-violet-50/50 open:to-cyan-50/30"
+                className="group rounded-2xl border border-border/60 bg-card-subtle px-5 py-1 shadow-sm backdrop-blur-sm transition-colors open:border-violet-300/60 open:bg-gradient-to-br open:from-[color:var(--tint-violet)] open:to-[color:var(--tint-cyan)] dark:open:border-violet-500/30"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-medium transition-colors hover:text-violet-700 [&::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-medium transition-colors hover:text-badge-text [&::-webkit-details-marker]:hidden">
                   <span>{item.question}</span>
                   <motion.span
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-600"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-icon-bg text-icon-text"
                     animate={{ rotate: 0 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -49,7 +49,7 @@ export function FAQContent() {
       </section>
 
       <section className="relative pb-24">
-        <div className="absolute inset-0 bg-gradient-to-t from-violet-100/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--tint-violet)] to-transparent" />
         <AnimatedReveal className="relative mx-auto max-w-5xl px-6 text-center">
           <FadeUpItem>
             <p className="text-muted">Still have questions?</p>

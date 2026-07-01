@@ -32,7 +32,7 @@ export function ContactContent() {
                     <span className="font-medium text-foreground">Email</span>
                     <a
                       href="mailto:hello@neuraquadai.com"
-                      className="mt-1 block text-violet-600 hover:underline"
+                      className="mt-1 block text-link-accent hover:underline"
                     >
                       hello@neuraquadai.com
                     </a>
@@ -61,7 +61,7 @@ export function ContactContent() {
               transition={{ duration: 0.55, delay: 0.2 }}
               className="lg:col-span-3"
             >
-              <div className="rounded-2xl border border-border/60 bg-white/90 p-8 shadow-sm backdrop-blur-sm">
+              <div className="rounded-2xl border border-border/60 bg-card p-8 shadow-sm backdrop-blur-sm">
                 <h2 className="text-lg font-semibold">Send a message</h2>
                 <p className="mt-1 text-sm text-muted">
                   Fill out the form and we&apos;ll get back to you shortly.
